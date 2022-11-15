@@ -4,18 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
   <title>Seaeducation</title>
-  <link rel="shortcut icon" href="../assets/images/logosea.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/svgs/seafav.svg" type="image/x-icon">
   <link rel="stylesheet" href="../css/tailwind.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav>
-    <div class="container">
-      <img src="../assets/images/logosea.png" alt="">
+  <section class="h-full w-full border-box transition-all duration-500 linear lg:px-16 md:px-20 px-6 py-2 bg-white shadow-md">
+    <div class="navbar-1-1">
+        <div class=" mx-auto flex flex-wrap flex-row items-center justify-between">
+            <a href="#" class="flex text-3xl font-bold items-center">
+                <img src="../assets/images/logosea.png" alt="">
+            </a>
+            <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+                <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+            <div class="hidden lg:flex lg:items-center lg:w-auto w-full lg:ml-auto lg:mr-auto flex-wrap items-center text-base justify-center transition-all"
+                id="menu">
+                <nav
+                    class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
+                    <a href="#" class="block nav-link active font-medium">Home</a>
+                    <a href="#" class="block nav-link text-serv-text">Explore</a>
+                    <a href="#" class="block nav-link text-serv-text">How It Works</a>
+                    <a href="#" class="block nav-link text-serv-text">Stories</a>
+                    <a href="#" class="block nav-link text-serv-text">Tips</a>
+                </nav>
+            </div>
+
+            <div class="hidden lg:flex items-center lg:w-auto w-full" id="menu">
+                <button onclick="toggleModal('loginModal')"
+                    class="lg:bg-white items-center border-0 block lg:inline-block lg:py-2 lg:px-8 px-4 py-3 w-full focus:outline-none rounded-2xl font-medium text-base mt-10 lg:mt-0">
+                    Log In
+                </button>
+                <button onclick="toggleModal('registerModal')"
+                    class="bg-blue-100 text-white items-center border-0 block lg:inline-block lg:py-2 lg:px-8 px-4 py-3 w-full focus:outline-none rounded-2xl font-medium text-base mt-3 lg:mt-0">
+                    Sign Up
+                </button>
+            </div>
+        </div>
     </div>
-  </nav>
+</section>
   <!-- End Navbar -->
 
   <!-- Hero section -->
@@ -43,4 +82,13 @@
   <!-- Eooter -->
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"
+    integrity="sha512-UU0D/t+4/SgJpOeBYkY+lG16MaNF8aqmermRIz8dlmQhOlBnw6iQrnt4Ijty513WB3w+q4JO75IX03lDj6qQNA=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
+    integrity="sha512-/ncZdOhQm5pgj5KHy720Ck7XF5RzYK6rtUsLNnGcitXrKT3wUYzTrPlOSG7SdL2kDzkuLEOFvrQRyllcZkeAlg=="
+    crossorigin="anonymous"></script>
 </html>
