@@ -1,85 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-  <title>Seaeducation</title>
-  <link rel="shortcut icon" href="../assets/svgs/seafav.svg" type="image/x-icon">
-  <link rel="stylesheet" href="../css/tailwind.css">
-</head>
+        <title>Seaeducation</title>
+        <link rel="shortcut icon" href="../assets/svgs/seafav.svg" type="image/x-icon">
+        <link rel="stylesheet" href="../css/tailwind.css">
+    </head>
 <body>
 
-  <!-- Navbar -->
-  <section class="h-full w-full border-box transition-all duration-500 linear lg:px-16 md:px-20 px-6 py-2 bg-white shadow-md">
-    <div class="navbar-1-1">
-        <div class=" mx-auto flex flex-wrap flex-row items-center justify-between">
-            <a href="#" class="flex text-3xl font-bold items-center">
-                <img src="../assets/images/logosea.png" alt="">
-            </a>
-            <label for="menu-toggle" class="cursor-pointer lg:hidden block">
-                <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </label>
-            <input class="hidden" type="checkbox" id="menu-toggle" />
-            <div class="hidden lg:flex lg:items-center lg:w-auto w-full lg:ml-auto lg:mr-auto flex-wrap items-center text-base justify-center transition-all"
-                id="menu">
-                <nav
-                    class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
-                    <a href="#" class="block nav-link active font-medium">Home</a>
-                    <a href="#" class="block nav-link text-serv-text">Explore</a>
-                    <a href="#" class="block nav-link text-serv-text">How It Works</a>
-                    <a href="#" class="block nav-link text-serv-text">Stories</a>
-                    <a href="#" class="block nav-link text-serv-text">Tips</a>
-                </nav>
-            </div>
+    <!-- Navbar -->
+    <section class="h-full w-full border-box transition-all duration-500 linear lg:px-16 md:px-20 px-6 py-2 bg-white shadow-md">
+        <div class="navbar-1-1">
+            <div class=" mx-auto flex flex-wrap flex-row items-center justify-between">
+                <a href="#" class="flex text-3xl font-bold items-center">
+                    <img src="../assets/images/logosea.png" alt="">
+                </a>
+                <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+                    <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </label>
+                <input class="hidden" type="checkbox" id="menu-toggle" />
+                <div class="hidden lg:flex lg:items-center lg:w-auto w-full lg:ml-auto lg:mr-auto flex-wrap items-center text-base justify-center transition-all"
+                    id="menu">
+                    <nav
+                        class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
+                        <a href="#" class="block nav-link active font-medium">Beranda</a>
+                        <a href="#" class="block nav-link text-serv-text">Program</a>
+                        <a href="#" class="block nav-link text-serv-text">Karir</a>
+                        <a href="#" class="block nav-link text-serv-text">Kerja Sama</a>
+                        <a href="#" class="block nav-link text-serv-text">Tentang Kami</a>
+                        <a href="#" class="block nav-link text-serv-text">Blog</a>
+                        <a href="#" class="block nav-link text-serv-text">Afiliasi</a>
+                    </nav>
+                </div>
 
-            <div class="hidden lg:flex items-center lg:w-auto w-full" id="menu">
-                <button onclick="toggleModal('loginModal')"
-                    class="lg:bg-white items-center border-0 block lg:inline-block lg:py-2 lg:px-8 px-4 py-3 w-full focus:outline-none rounded-2xl font-medium text-base mt-10 lg:mt-0">
-                    Log In
-                </button>
-                <button onclick="toggleModal('registerModal')"
-                    class="bg-blue-100 text-white items-center border-0 block lg:inline-block lg:py-2 lg:px-8 px-4 py-3 w-full focus:outline-none rounded-2xl font-medium text-base mt-3 lg:mt-0">
-                    Sign Up
-                </button>
+                <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+                    <button onclick="toggleModal('loginModal')"
+                        class="lg:bg-white border-0 block lg:inline-block lg:py-3 lg:px-4 px-4 py-3 w-full focus:outline-none rounded-2xl font-medium text-base mt-10 lg:mt-0">
+                        Masuk
+                    </button>
+                    <button onclick="toggleModal('registerModal')"
+                        class="bg-blue-100 text-white border-0 block lg:inline-block lg:py- lg:px-8 px-4 py-3 w-full focus:outline-none rounded-2xl font-medium text-base mt-3 lg:mt-0">
+                        Daftar
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-  <!-- End Navbar -->
+    </section>
+    <!-- End Navbar -->
 
-  <!-- Hero section -->
-  <!-- End hero section -->
+    <!-- Hero section -->
+    <Section id="hero-section" class="relative bg-white h-full w-full lg:px-16 md:px-20 px-6 py-2 pt-36 linear">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <!-- left column -->
+                <div class="w-full self-center px-4">
+                    <h1 class="text-base font-bold text-primary-blue lg:text-heading-1 text-heading-3 mb-5 lg:mb-10">
+                        Navigate Your <span class="text-secondary-orange">Future</span>
+                    </h1>
+                    <p class="font-medium text-black block mb-10 leading-relaxed">
+                        Pelatihan dan penyaluran kerja dibidang perhotelan dan kapal pesiar
+                        tanpa harus memilik background perhotelan
+                    </p>
+                    <a href="#" class="text-base font-semibold py-3 px-8 rounded-full text-white bg-primary-blue hover:shadow-lg hover:bg-darkblue">Daftar Sekarang</a>
+                </div>
 
-  <!-- Why working in cruise ship -->
-  <!-- End why working in cruise ship -->
+                <!-- right column -->
+                <div class="w-full self-end px-4">
+                    <div class="mt-10">
+                        <img src="../assets/images/banner2.png" alt="hero-banner" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <!-- End hero section -->
 
-  <!-- Bootcamp section dibimbing-->
-  <!-- End bootcamp section -->
+    <!-- Why working in cruise ship -->
+    <!-- End why working in cruise ship -->
 
-  <!-- why choose sea education reference dibimbing-->
-  <!-- end why choose sea education -->
+    <!-- Bootcamp section dibimbing-->
+    <!-- End bootcamp section -->
 
-  <!-- Testimonial Reference pijar-->
-  <!-- End testimonial -->
-  
-  <!-- Hiring partner reference pijar-->
-  <!-- End hiring partner pijar-->
+    <!-- why choose sea education reference dibimbing-->
+    <!-- end why choose sea education -->
 
-  <!-- Call to action -->
-  <!-- Endall to action -->
+    <!-- Testimonial Reference pijar-->
+    <!-- End testimonial -->
+    
+    <!-- Hiring partner reference pijar-->
+    <!-- End hiring partner pijar-->
 
-  <!-- Footer -->
-  <!-- Eooter -->
+    <!-- Call to action -->
+    <!-- Endall to action -->
+
+    <!-- Footer -->
+    <!-- Eooter -->
 
 </body>
 

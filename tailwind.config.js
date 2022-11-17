@@ -7,8 +7,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: 'Poppins, sans-serif',
+        base: 'Poppins, sans-serif',
         label: 'Montserrat, sans-serif',
+      },
+      fontSize: {
+        'heading-1': '48px',
+        'heading-2': '36px',
+        'heading-3': '24px',
+        'heading-4': '18px',
+        'heading-5': '14px',
+        'heading-6': '12px',
       },
       colors: {
         primary: {
@@ -22,10 +30,6 @@ module.exports = {
           yellow: '#EBA41F',
           red: '#EB1F2B',
           green: '#2ED16C',
-        },
-        color: {
-          primary: '#050D18',
-          secondary: '#50555D',
         },
         white: '#FFFFFF',
         black: '#000000',

@@ -22,3 +22,13 @@
 .align-sub {
     vertical-align: sub;
 }
+
+@media only screen and (min-width: 992px) {
+    .hero-bg {
+        background-image: url('../images/hero-bg.svg');
+    }
+    .cta-bg {
+        background-image: url('../images/cta-bg.svg');
+        background-position: center top;
+    }
+}
