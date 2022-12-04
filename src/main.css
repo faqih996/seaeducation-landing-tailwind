@@ -32,3 +32,12 @@
         background-position: center top;
     }
 }
+
+@layer components{
+    .accordion-header{
+        @apply py-4 px-6 cursor-pointer
+    }
+    .accordion-body{
+        @apply max-h-0 overflow-hidden transition-all duration-200 ease-out
+    }
+}

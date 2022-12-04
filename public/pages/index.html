@@ -19,13 +19,13 @@
 
     <!-- Navbar -->
     <section
-        class="h-full w-full border-box transition-all duration-500 linear lg:px-16 md:px-20 px-6 py-2 bg-white shadow-md z-10">
+        class="z-10 w-full h-full px-6 py-2 transition-all duration-500 bg-white shadow-md border-box linear lg:px-16 md:px-20">
         <div class="navbar-1-1">
-            <div class="mx-auto flex flex-wrap flex-row items-center justify-between">
-                <a href="#" class="flex text-3xl font-bold items-center">
+            <div class="flex flex-row flex-wrap items-center justify-between mx-auto">
+                <a href="#" class="flex items-center text-3xl font-bold">
                     <img src="../assets/images/logosea.png" alt="">
                 </a>
-                <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+                <label for="menu-toggle" class="block cursor-pointer lg:hidden">
                     <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -34,27 +34,27 @@
                     </svg>
                 </label>
                 <input class="hidden" type="checkbox" id="menu-toggle" />
-                <div class="hidden lg:flex lg:items-center lg:w-auto w-full lg:ml-auto lg:mr-auto flex-wrap items-center text-base justify-center transition-all"
+                <div class="flex-wrap items-center justify-center hidden w-full text-base transition-all lg:flex lg:items-center lg:w-auto lg:ml-auto lg:mr-auto"
                     id="menu">
                     <nav
-                        class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
-                        <a href="#" class="block nav-link active font-bold  hover:text-primary-blue">Beranda</a>
-                        <a href="#" class="block nav-link font-medium hover:text-primary-blue">Program</a>
-                        <a href="#" class="block nav-link font-medium hover:text-primary-blue">Karir</a>
-                        <a href="#" class="block nav-link font-medium hover:text-primary-blue">Kerja Sama</a>
-                        <a href="#" class="block nav-link font-medium hover:text-primary-blue">Tentang Kami</a>
-                        <a href="#" class="block nav-link font-medium hover:text-primary-blue">Blog</a>
-                        <a href="#" class="block nav-link font-medium hover:text-primary-blue">Afiliasi</a>
+                        class="items-center justify-between pt-8 space-x-0 space-y-6 text-base lg:space-x-12 lg:flex lg:pt-0 lg:space-y-0">
+                        <a href="#" class="block font-bold nav-link active hover:text-primary-blue">Beranda</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Program</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Karir</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Kerja Sama</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Tentang Kami</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Blog</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Afiliasi</a>
                     </nav>
                 </div>
 
-                <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+                <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
                     <button onclick="toggleModal('loginModal')"
-                        class="lg:bg-white hover:bg-blue-10 border-0 block lg:inline-block lg:py-3 lg:px-4 px-4 py-3 w-full focus:outline-none rounded-2xl font-medium text-base mt-10 lg:mt-0">
+                        class="block w-full px-4 py-3 mt-10 text-base font-medium border-0 lg:bg-white hover:bg-blue-10 lg:inline-block lg:py-3 lg:px-4 focus:outline-none rounded-2xl lg:mt-0">
                         Masuk
                     </button>
                     <button onclick="toggleModal('registerModal')"
-                        class="bg-blue-100 hover:bg-primary-darkblue text-white border-0 block lg:inline-block lg:py- lg:px-8 px-4 py-3 w-full focus:outline-none rounded-2xl font-medium text-base mt-3 lg:mt-0">
+                        class="block w-full px-4 py-3 mt-3 text-base font-medium text-white bg-blue-100 border-0 hover:bg-primary-darkblue lg:inline-block lg:py- lg:px-8 focus:outline-none rounded-2xl lg:mt-0">
                         Daftar
                     </button>
                 </div>
@@ -65,30 +65,30 @@
 
     <!-- Hero section -->
     <Section id="hero-section"
-        class="h-full w-full items-center lg:px-16 md:px-20 px-6 py-2 lg:pt-16 pt-16 mx-auto linear">
-        <div class="mx-auto flex flex-wrap items-center justify-between">
+        class="items-center w-full h-full px-6 py-2 pt-16 mx-auto lg:px-16 md:px-20 lg:pt-16 linear">
+        <div class="flex flex-wrap items-center justify-between mx-auto">
             <!-- left column -->
-            <div class="w-full self-center px-4 lg:w-1/2">
+            <div class="self-center w-full px-4 lg:w-1/2">
                 <h2 class="font-semibold text-secondary-orange text-heading-3">
                     Navigate Your Future
                 </h2>
-                <h1 class="font-bold text-primary-blue lg:text-heading-1 text-heading-2 mb-5 lg:mb-10">
+                <h1 class="mb-5 font-bold text-primary-blue lg:text-heading-1 text-heading-2 lg:mb-10">
                     Start Your International Hospitality Career Now
                 </h1>
-                <p class="font-medium text-slate-700 mb-8 leading-relaxed ">
+                <p class="mb-8 font-medium leading-relaxed text-slate-700 ">
                     Pelatihan dan penyaluran kerja dibidang perhotelan dan kapal pesiar
                     <span class="block">tanpa harus memilik background perhotelan.</span>
                 </p>
                 <div
-                    class="lg:justify-start justify-center items-center lg:space-x-8 md:space-x-2 space-x-0 w-full lg:w-5/12">
+                    class="items-center justify-center w-full space-x-0 lg:justify-start lg:space-x-8 md:space-x-2 lg:w-5/12">
                     <a href="#"
-                        class="w-full sm:w-auto text-base font-semibold py-3 px-8 rounded-full text-white bg-primary-blue hover:shadow-lg hover:bg-primary-darkblue">Daftar
+                        class="w-full px-8 py-3 text-base font-semibold text-white rounded-full sm:w-auto bg-primary-blue hover:shadow-lg hover:bg-primary-darkblue">Daftar
                         Sekarang</a>
                 </div>
             </div>
 
             <!-- right column -->
-            <div class="w-full self-center px-4 lg:w-1/2">
+            <div class="self-center w-full px-4 lg:w-1/2">
                 <div class="relative mt-10 ml-2">
                     <img src="../assets/images/banner2.png" class="max-w-full mx-auto" width="500px" alt="hero-banner"
                         srcset="">
@@ -96,20 +96,20 @@
             </div>
         </div>
 
-        <div class="lg:mb-20 mb-10 flex mx-auto sm:space-x-4 space-x-1">
-            <div class="flex-1 flex items-center justify-center py-3 px-6">
+        <div class="flex mx-auto mb-10 space-x-1 lg:mb-20 sm:space-x-4">
+            <div class="flex items-center justify-center flex-1 px-6 py-3">
                 <img src="../assets/images/mentor.png" alt="">
             </div>
-            <div class="flex-1 flex items-center justify-center py-3 px-6">
+            <div class="flex items-center justify-center flex-1 px-6 py-3">
                 <img src="../assets/images/mentor.png" alt="">
             </div>
-            <div class="flex-1 flex items-center justify-center py-3 px-6">
+            <div class="flex items-center justify-center flex-1 px-6 py-3">
                 <img src="../assets/images/mentor.png" alt="">
             </div>
-            <div class="flex-1 flex items-center justify-center py-3 px-6">
+            <div class="flex items-center justify-center flex-1 px-6 py-3">
                 <img src="../assets/images/mentor.png" alt="">
             </div>
-            <div class="flex-1 flex items-center justify-center py-3 px-6">
+            <div class="flex items-center justify-center flex-1 px-6 py-3">
                 <img src="../assets/images/mentor.png" alt="">
             </div>
         </div>
@@ -121,17 +121,17 @@
     <!-- End why working in cruise ship -->
 
     <!-- Bootcamp section pijar-->
-    <section id="why-cruise-ship" class=" bg-blue-10 mt-6 h-full w-full items-center lg:px-16 md:px-20 px-6 py-2 pt-16">
+    <section id="why-cruise-ship" class="items-center w-full h-full px-6 py-2 pt-16 mt-6 bg-blue-10 lg:px-16 md:px-20">
         <div class="mx-auto mx-w-7xl">
             <Span class="font-medium text-primary-blue text-heading-3">Our Program</Span>
-            <h1 class="text-heading-3 font-bold text-slate-700 sm:text-heading-3">
+            <h1 class="font-bold text-heading-3 text-slate-700 sm:text-heading-3">
                 Program Belajar Efektif Dengan Mentor Profesional
             </h1>
 
             <div class="flex flex-wrap justify-between mx-auto lg:-mx-4">
                 <!-- Card -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                    <div class="overflow-hidden border bg-white border-gray-200 rounded-xl">
+                    <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
                         <a href="details.html">
                             <div class="m-4 overflow-hidden rounded-xl">
                                 <img alt="Placeholder" class="block w-full h-auto"
@@ -142,18 +142,18 @@
                         <div class="px-4 mb-4 leading-tight">
                             <div class="flex">
                                 <span
-                                    class="block text-heading-6 bg-blue-30 text-blue-100 rounded-xl px-2 my-2 font-semibold">
+                                    class="block px-2 my-2 font-semibold text-blue-100 text-heading-6 bg-blue-30 rounded-xl">
                                     PENDAFTARAN DIBUKA
                                 </span>
                             </div>
-                            <h1 class="text-heading-3 mb-2">
+                            <h1 class="mb-2 text-heading-3">
                                 <a class="font-bold text-black" href="#">
                                     Regular Program
                                 </a>
                             </h1>
 
                             <div class="flex flex-row mb-2">
-                                <p class="flex text-xs text-gray-50 mr-6">
+                                <p class="flex mr-6 text-xs text-gray-50">
                                     <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                         xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                         <path
@@ -175,7 +175,7 @@
 
                             <div class="flex">
                                 <p
-                                    class="text-heading-6 font-semibold bg-blue-30 text-blue-100 rounded-xl items-center mb-5 px-2 my-2">
+                                    class="items-center px-2 my-2 mb-5 font-semibold text-blue-100 text-heading-6 bg-blue-30 rounded-xl">
                                     Deadline Pendaftaran : 4 Desember 2022
                                 </p>
                             </div>
@@ -186,7 +186,7 @@
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                    <div class="overflow-hidden border bg-white border-gray-200 rounded-xl">
+                    <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
                         <a href="details.html">
                             <div class="m-4 overflow-hidden rounded-xl">
                                 <img alt="Placeholder" class="block w-full h-auto"
@@ -197,18 +197,18 @@
                         <div class="px-4 mb-4 leading-tight">
                             <div class="flex">
                                 <span
-                                    class="block text-heading-6 bg-gray-30 text-gray-100 rounded-xl px-2 my-2 font-semibold">
+                                    class="block px-2 my-2 font-semibold text-gray-100 text-heading-6 bg-gray-30 rounded-xl">
                                     PENDAFTARAN DITUTUP
                                 </span>
                             </div>
-                            <h1 class="text-heading-3 mb-2">
+                            <h1 class="mb-2 text-heading-3">
                                 <a class="font-bold text-black" href="#">
                                     Executive Program
                                 </a>
                             </h1>
 
                             <div class="flex flex-row mb-2">
-                                <p class="flex text-xs  text-gray-50 mr-6">
+                                <p class="flex mr-6 text-xs text-gray-50">
                                     <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                         xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                         <path
@@ -230,14 +230,14 @@
 
                             <div class="flex">
                                 <p
-                                    class="text-heading-6 font-semibold bg-gray-30 text-gray-100 rounded-xl items-center mb-5 px-2 my-2">
+                                    class="items-center px-2 my-2 mb-5 font-semibold text-gray-100 text-heading-6 bg-gray-30 rounded-xl">
                                     Deadline Pendaftaran : -
                                 </p>
                             </div>
 
                             <!-- <div class="mt-4">
                                 <Button
-                                    class="h-full w-full bg-secondary-orange lg:py-4 py-2 items-center rounded-md font-bold text-white">
+                                    class="items-center w-full h-full py-2 font-bold text-white rounded-md bg-secondary-orange lg:py-4">
                                     Selengkapnya
                                 </Button>
                             </div> -->
@@ -248,7 +248,7 @@
 
                 <!-- Card -->
                 <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                    <div class="overflow-hidden border bg-white border-gray-200 rounded-xl">
+                    <div class="overflow-hidden bg-white border border-gray-200 rounded-xl">
                         <a href="details.html">
                             <div class="m-4 overflow-hidden rounded-xl">
                                 <img alt="Placeholder" class="block w-full h-auto"
@@ -259,18 +259,18 @@
                         <div class="px-4 mb-4 leading-tight">
                             <div class="flex">
                                 <span
-                                    class="block text-heading-6 bg-blue-30 text-blue-100 rounded-xl px-2 my-2 font-semibold">
+                                    class="block px-2 my-2 font-semibold text-blue-100 text-heading-6 bg-blue-30 rounded-xl">
                                     PENDAFTARAN DIBUKA
                                 </span>
                             </div>
-                            <h1 class="text-heading-3 mb-2">
+                            <h1 class="mb-2 text-heading-3">
                                 <a class="font-bold text-black" href="#">
                                     Regular Program
                                 </a>
                             </h1>
 
                             <div class="flex flex-row mb-2">
-                                <p class="flex text-xs  text-gray-50 mr-6">
+                                <p class="flex mr-6 text-xs text-gray-50">
                                     <svg fill="none" height="14" viewBox="0 0 12 14" width="12"
                                         xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                         <path
@@ -292,7 +292,7 @@
 
                             <div class="flex">
                                 <p
-                                    class="text-heading-6 font-semibold bg-blue-30 text-blue-100 rounded-xl items-center mb-5 px-2 my-2">
+                                    class="items-center px-2 my-2 mb-5 font-semibold text-blue-100 text-heading-6 bg-blue-30 rounded-xl">
                                     Deadline Pendaftaran : 4 Desember 2022
                                 </p>
                             </div>
@@ -306,7 +306,7 @@
     <!-- End bootcamp section -->
 
     <!-- why choose sea education reference dibimbing-->
-    <section id="why-cruise-ship" class=" bg-blue-100 h-full w-full items-center lg:px-16 md:px-20 px-6 py-2 pt-16">
+    <section id="why-cruise-ship" class="items-center w-full h-full px-6 py-2 pt-16 bg-blue-100 lg:px-16 md:px-20">
         <div class="mx-auto mx-w-7xl">
 
         </div>
@@ -314,7 +314,7 @@
     <!-- end why choose sea education -->
 
     <!-- Hiring partner reference pijar-->
-    <section id="why-cruise-ship" class=" bg-blue-10 h-full w-full items-center lg:px-16 md:px-20 px-6 py-2 pt-16">
+    <section id="why-cruise-ship" class="items-center w-full h-full px-6 py-2 pt-16 bg-blue-10 lg:px-16 md:px-20">
         <div class="mx-auto mx-w-7xl">
 
         </div>
@@ -322,10 +322,10 @@
     <!-- End hiring partner pijar-->
 
     <!-- Testimonial Reference pijar-->
-    <section id="testimonials" class="bg-blue-100 h-full w-full items-center lg:px-16 md:px-20 px-6 py-2 pt-16">
+    <section id="testimonials" class="items-center w-full h-full px-6 py-2 pt-16 bg-blue-100 lg:px-16 md:px-20">
         <div class="mx-auto mx-w-7xl">
             <Span class="font-medium text-white text-heading-3">Testimoni</Span>
-            <h1 class="text-heading-3 font-bold text-secondary-yellow sm:text-heading-3 mb-3">
+            <h1 class="mb-3 font-bold text-heading-3 text-secondary-yellow sm:text-heading-3">
                 Pengalaman alumnus kami yang sudah bekerja
             </h1>
 
@@ -335,16 +335,16 @@
                     <div class="overflow-hidden border border-gray-200 rounded-xl">
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4">
-                                <div class="relative rounded-full overflow-hidden w-16 h-16 mr-3">
+                                <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
                                     <img src="../assets/images/mentor.png" alt="Profile" layout="fill" objectFit="cover"
                                         objectPosition="center" />
                                     </img>
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="text-heading-4 text-gray-100 font-label font-bold mb-1">
+                                    <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
                                         Syakir Firdaus
                                     </p>
-                                    <p class="text-heading-5 text-gray-50 font-bold">
+                                    <p class="font-bold text-heading-5 text-gray-50">
                                         Bandung, Jawa Barat
                                     </p>
                                 </div>
@@ -358,12 +358,12 @@
                             </div>
 
                             <div class="flex">
-                                <p class="font-bold text-heading-4 block text-primary-blue mt-2 mb-2">
+                                <p class="block mt-2 mb-2 font-bold text-heading-4 text-primary-blue">
                                     Front Office
                                     <span class="font-normal text-black">at</span>
                                 </p>
                             </div>
-                            <img class="block h-full w-full" src="" alt="logo-work">
+                            <img class="block w-full h-full" src="" alt="logo-work">
                         </div>
                     </div>
                 </div>
@@ -374,16 +374,16 @@
                     <div class="overflow-hidden border border-gray-200 rounded-xl">
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4">
-                                <div class="relative rounded-full overflow-hidden w-16 h-16 mr-3">
+                                <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
                                     <img src="../assets/images/mentor.png" alt="Profile" layout="fill" objectFit="cover"
                                         objectPosition="center" />
                                     </img>
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="text-heading-4 text-gray-100 font-label font-bold mb-1">
+                                    <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
                                         Rohim
                                     </p>
-                                    <p class="text-heading-5 text-gray-50 font-bold">
+                                    <p class="font-bold text-heading-5 text-gray-50">
                                         Bandung, Jawa Barat
                                     </p>
                                 </div>
@@ -397,12 +397,12 @@
                             </div>
 
                             <div class="flex">
-                                <p class="font-bold text-heading-4 block text-primary-blue mt-2 mb-2">
+                                <p class="block mt-2 mb-2 font-bold text-heading-4 text-primary-blue">
                                     Pantry Chef
                                     <span class="font-normal text-black">at</span>
                                 </p>
                             </div>
-                            <img class="block h-full w-full" src="" alt="logo-work">
+                            <img class="block w-full h-full" src="" alt="logo-work">
                         </div>
                     </div>
                 </div>
@@ -413,16 +413,16 @@
                     <div class="overflow-hidden border border-gray-200 rounded-xl">
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4">
-                                <div class="relative rounded-full overflow-hidden w-16 h-16 mr-3">
+                                <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
                                     <img src="../assets/images/mentor.png" alt="Profile" layout="fill" objectFit="cover"
                                         objectPosition="center" />
                                     </img>
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="text-heading-4 text-gray-100 font-label font-bold mb-1">
+                                    <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
                                         Syakir Firdaus
                                     </p>
-                                    <p class="text-heading-5 text-gray-50 font-bold">
+                                    <p class="font-bold text-heading-5 text-gray-50">
                                         Bandung, Jawa Barat
                                     </p>
                                 </div>
@@ -436,12 +436,12 @@
                             </div>
 
                             <div class="flex">
-                                <p class="font-bold text-heading-4 block text-primary-blue mt-2 mb-2">
+                                <p class="block mt-2 mb-2 font-bold text-heading-4 text-primary-blue">
                                     Housekeeping
                                     <span class="font-normal text-black">at</span>
                                 </p>
                             </div>
-                            <img class="block items-center" src="" alt="logo-work">
+                            <img class="items-center block" src="" alt="logo-work">
                         </div>
                     </div>
                 </div>
@@ -452,16 +452,16 @@
                     <div class="overflow-hidden border border-gray-200 rounded-xl">
                         <div class="flex flex-col p-4 bg-white">
                             <div class="flex mb-4">
-                                <div class="relative rounded-full overflow-hidden w-16 h-16 mr-3">
+                                <div class="relative w-16 h-16 mr-3 overflow-hidden rounded-full">
                                     <img src="../assets/images/mentor.png" alt="Profile" layout="fill" objectFit="cover"
                                         class="items-center" />
                                     </img>
                                 </div>
                                 <div className="flex flex-col">
-                                    <p class="text-heading-4 text-gray-100 font-label font-bold mb-1">
+                                    <p class="mb-1 font-bold text-gray-100 text-heading-4 font-label">
                                         Rohim
                                     </p>
-                                    <p class="text-heading-5 text-gray-50 font-bold">
+                                    <p class="font-bold text-heading-5 text-gray-50">
                                         Bandung, Jawa Barat
                                     </p>
                                 </div>
@@ -475,12 +475,12 @@
                             </div>
 
                             <div class="flex">
-                                <p class="font-bold text-heading-4 block text-primary-blue mt-2 mb-2">
+                                <p class="block mt-2 mb-2 font-bold text-heading-4 text-primary-blue">
                                     Waiter
                                     <span class="font-normal text-black">at</span>
                                 </p>
                             </div>
-                            <img class="block h-full w-full" src="" alt="logo-work">
+                            <img class="block w-full h-full" src="" alt="logo-work">
                         </div>
                     </div>
                 </div>
@@ -491,24 +491,48 @@
     <!-- End testimonial -->
 
     <!-- Frequently Asked Question -->
-    <section id="why-cruise-ship" class=" bg-blue-10 h-full w-full items-center lg:px-16 md:px-20 px-6 py-2 pt-16">
+    <section id="why-cruise-ship" class="items-center w-full h-full px-6 py-2 pt-16 bg-blue-10 lg:px-16 md:px-20">
         <div class="mx-auto mx-w-7xl">
-            <h1 class="text-heading-3 font-bold text-slate-700 text-center mb-3">
+            <h1 class="mb-3 font-bold text-center text-heading-3 text-slate-700">
                 Pertanyaan Yang Sering Ditanyakan
             </h1>
+
+            <div class="justify-between mx-auto lg:-mx-4">
+                <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4">
+                    <div class=" bg-white border-2 border-gray-50 rounded-xl">
+                        <div class="accordion-header flex items-center justify-between">
+                            <!-- FAQ -->
+                            <span class="font-semibold text-slate-700 text-heading-4">
+                                Bagaimana tahapan program pelatihan ini?
+                            </span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="accordion-body">
+                            <div class="border-t p-4">
+                                <p>
+                                    aaaa
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- EndFrequently Asked Question -->
 
     <!-- Call to action -->
-    <section id="why-cruise-ship" class=" bg-blue-100 h-full w-full lg:px-16 md:px-20 px-6 pt-10 pb-10">
+    <section id="why-cruise-ship" class="w-full h-full px-6 pt-10 pb-10 bg-blue-100 lg:px-16 md:px-20">
         <div class="mx-auto mx-w-7xl ">
-            <h1 class="text-heading-3 font-bold text-white text-center mb-3">
+            <h1 class="mb-3 font-bold text-center text-white text-heading-3">
                 Tunggu Apa Lagi? Gabung Bersama Kami!
             </h1>
 
             <div class="items-center text-center">
-                <button class="bg-secondary-yellow p-3 rounded-md  font-bold text-heading-4 text-white">
+                <button class="p-3 font-bold text-white rounded-md bg-secondary-yellow text-heading-4">
                     Daftar Sekarang
                 </button>
             </div>
@@ -517,9 +541,9 @@
     <!-- Endall to action -->
 
     <!-- Footer -->
-    <section id="testimonials" class="bg-blue-10 h-full w-full items-center lg:px-16 md:px-20 px-6 py-2 pt-16">
+    <section id="testimonials" class="items-center w-full h-full px-6 py-2 pt-16 bg-blue-10 lg:px-16 md:px-20">
         <div class="mx-auto mx-w-7xl">
-            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2">
+            <div class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-5">
                 <div class="mb-5">
                     <img class="mb-3" src="../assets/images/logosea.png" alt="" srcset="">
                     <p class="text-md font-label">Sea Education adalah program pelatihan
@@ -530,51 +554,51 @@
                 </div>
 
                 <div class="mb-5">
-                    <h4 class="text-heading-4 font-bold mb-2">Company</h4>
+                    <h4 class="mb-2 font-bold text-heading-4">Company</h4>
                     <ul class="text-gray-100">
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">About</a></li>
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Our Timeline</a></li>
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Contact Us</a></li>
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Careers</a></li>
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Privacy & Policy</a></li>
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Terms & Condition</a></li>
                     </ul>
                 </div>
 
                 <div class="mb-5">
-                    <h4 class="text-heading-4 font-bold mb-2">Program</h4>
+                    <h4 class="mb-2 font-bold text-heading-4">Program</h4>
                     <ul class="text-gray-100">
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Regular Program</a></li>
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Executive Program</a></li>
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Twinning Program</a></li>
-                        <li class="pb-3"><i class="fa-solid fa-chevron-right text-primary-blue mr-3"></i><a href="#"
+                        <li class="pb-3"><i class="mr-3 fa-solid fa-chevron-right text-primary-blue"></i><a href="#"
                                 class="hover:text-primary-blue">Sea Job Consultany</a></li>
                     </ul>
                 </div>
 
                 <div class="mb-5">
-                    <h4 class="text-heading-4 font-bold mb-2">Social Media</h4>
+                    <h4 class="mb-2 font-bold text-heading-4">Social Media</h4>
                     <ul class="text-gray-100">
                         <div>
-                            <li class="pb-3 flex flex-align-center"><img class="w-[20px] mr-3 "
+                            <li class="flex pb-3 flex-align-center"><img class="w-[20px] mr-3 "
                                     src="../assets/svgs/instagram.svg" alt=""><a href="#"
                                     class="hover:text-primary-blue">Instagram</a></li>
-                            <li class="pb-3 flex flex-align-center"><img class="w-[20px] mr-3 "
+                            <li class="flex pb-3 flex-align-center"><img class="w-[20px] mr-3 "
                                     src="../assets/svgs/tiktok.svg" alt=""><a href="#"
                                     class="hover:text-primary-blue">TikTok</a></li>
-                            <li class="pb-3 flex flex-align-center"><img class="w-[20px] mr-3 "
+                            <li class="flex pb-3 flex-align-center"><img class="w-[20px] mr-3 "
                                     src="../assets/svgs/facebook.svg" alt=""><a href="#"
                                     class="hover:text-primary-blue">Facebook</a></li>
-                            <li class="pb-3 flex flex-align-center"><img class="w-[20px] mr-3 "
+                            <li class="flex pb-3 flex-align-center"><img class="w-[20px] mr-3 "
                                     src="../assets/svgs/youtube.svg" alt=""><a href="#"
                                     class="hover:text-primary-blue">Youtube</a></li>
                         </div>
@@ -582,17 +606,17 @@
                 </div>
 
                 <div class="mb-5">
-                    <h4 class="text-heading-4 font-bold mb-2">Office</h4>
+                    <h4 class="mb-2 font-bold text-heading-4">Office</h4>
                     <ul class="text-gray-100">
-                        <li class="pb-1"><a href="#" class="hover:text-primary-blue font-bold">MEDAN</a></li>
-                        <p class="text-md font-label font-semibold pb-3">
+                        <li class="pb-1"><a href="#" class="font-bold hover:text-primary-blue">MEDAN</a></li>
+                        <p class="pb-3 font-semibold text-md font-label">
                             PAS BUILDING <br>
                             <span class="font-normal">Jl. Brigjen Katamso No.27A, Kp.Baru<br>
                                 Kec. Medan Baru, Kota Medan, Sumatera Utara
                             </span>
                         </p>
-                        <li class="pb-1"><a href="#" class="hover:text-primary-blue font-bold">JAKARTA</a></li>
-                        <p class="text-md font-label font-semibold pb-3">
+                        <li class="pb-1"><a href="#" class="font-bold hover:text-primary-blue">JAKARTA</a></li>
+                        <p class="pb-3 font-semibold text-md font-label">
                             BINTARO BUSSINESS CENTRE <br>
                             <span class="font-normal">Jl. RC. Veteran Raya No.1i, RT.1/RW.3, Bintaro,
                                 <br>
@@ -605,31 +629,32 @@
         </div>
     </section>
 
-    <div class="flex flex-col-reverse md:flex-row bg-primary-blue lg:px-16 px-6 pt-10 pb-10">
-        <p class="text-heading-4 items-center text-center text-white">©2018-2022 Sea Education. All Right Reserved
+    <div class="flex flex-col-reverse px-6 pt-10 pb-10 md:flex-row bg-primary-blue lg:px-16">
+        <p class="items-center text-center text-white text-heading-4">©2018-2022 Sea Education. All Right Reserved
         </p>
 
-        <div class="flex-1 text-heading-4 items-center md:text-right text-center  text-white">
-            <p class="mr-5"><i class="fa-solid fa-phone mr-1"></i>
+        <div class="items-center flex-1 text-center text-white text-heading-4 md:text-right">
+            <p class="mr-5"><i class="mr-1 fa-solid fa-phone"></i>
                 0896-0834-7125
             </p>
         </div>
-        <div class=" text-heading-4 items-center md:text-right text-center text-white">
-            <p class="mr-5"><i class="fa-solid fa-envelope mr-1"></i>info@seaeducation.com</p>
+        <div class="items-center text-center text-white text-heading-4 md:text-right">
+            <p class="mr-5"><i class="mr-1 fa-solid fa-envelope"></i>info@seaeducation.com</p>
         </div>
     </div>
     <!-- End Footer -->
 
+    <script src="/src/javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"
+        integrity="sha512-UU0D/t+4/SgJpOeBYkY+lG16MaNF8aqmermRIz8dlmQhOlBnw6iQrnt4Ijty513WB3w+q4JO75IX03lDj6qQNA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
+        integrity="sha512-/ncZdOhQm5pgj5KHy720Ck7XF5RzYK6rtUsLNnGcitXrKT3wUYzTrPlOSG7SdL2kDzkuLEOFvrQRyllcZkeAlg=="
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/54a809af02.js" crossorigin="anonymous"></script>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"
-    integrity="sha512-UU0D/t+4/SgJpOeBYkY+lG16MaNF8aqmermRIz8dlmQhOlBnw6iQrnt4Ijty513WB3w+q4JO75IX03lDj6qQNA=="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
-    integrity="sha512-/ncZdOhQm5pgj5KHy720Ck7XF5RzYK6rtUsLNnGcitXrKT3wUYzTrPlOSG7SdL2kDzkuLEOFvrQRyllcZkeAlg=="
-    crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/54a809af02.js" crossorigin="anonymous"></script>
 
 </html>
