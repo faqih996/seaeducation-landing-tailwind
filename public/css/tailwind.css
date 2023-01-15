@@ -731,6 +731,10 @@ video {
   height: 4rem;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1187,6 +1191,18 @@ video {
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pt-60 {
+  padding-top: 15rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-left {

@@ -14,11 +14,58 @@
 </head>
 
 <body>
-    <section id="hero-section"
-        class="items-center w-full h-full px-6 py-2 pt-16 mx-auto lg:px-16 md:px-20 lg:pt-16 linear">
+
+    <!-- Navbar -->
+    <section
+        class="z-10 w-full px-6 py-2 transition-all duration-500 bg-white shadow-md border-box linear lg:px-16 md:px-20">
+        <div class="navbar-1-1">
+            <div class="flex flex-row flex-wrap items-center justify-between mx-auto">
+                <a href="#" class="flex items-center text-3xl font-bold">
+                    <img src="../assets/images/logosea.png" alt="">
+                </a>
+                <label for="menu-toggle" class="block cursor-pointer lg:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </label>
+                <input class="hidden" type="checkbox" id="menu-toggle" />
+                <div class="flex-wrap items-center justify-center hidden w-full text-base transition-all lg:flex lg:items-center lg:w-auto lg:ml-auto lg:mr-auto"
+                    id="menu">
+                    <nav
+                        class="items-center justify-between pt-8 space-x-0 space-y-6 text-base lg:space-x-12 lg:flex lg:pt-0 lg:space-y-0">
+                        <a href="#" class="block font-bold nav-link active hover:text-primary-blue">Beranda</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Program</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Karir</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Kerja Sama</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Tentang Kami</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Blog</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Afiliasi</a>
+                    </nav>
+                </div>
+
+                <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
+                    <button onclick="toggleModal('loginModal')"
+                        class="block w-full px-4 py-3 mt-10 text-base font-medium border-0 lg:bg-white hover:bg-blue-10 lg:inline-block lg:py-3 lg:px-4 focus:outline-none rounded-2xl lg:mt-0">
+                        Masuk
+                    </button>
+                    <button onclick="toggleModal('registerModal')"
+                        class="block w-full px-4 py-3 mt-3 text-base font-medium text-white bg-blue-100 border-0 hover:bg-primary-darkblue lg:inline-block lg:py- lg:px-8 focus:outline-none rounded-2xl lg:mt-0">
+                        Daftar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Navbar -->
+
+    <!-- slider -->
+    <section id="hero-section" class="items-center w-full h-full mx-auto linear">
         <div class="flex flex-wrap items-center justify-between mx-auto">
 
-            <div class="swiper">
+            <div class="swiper w-full h-[500px]">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -43,7 +90,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="src/javascript/script.js"></script>
+    <script src="/src/javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"
         integrity="sha512-UU0D/t+4/SgJpOeBYkY+lG16MaNF8aqmermRIz8dlmQhOlBnw6iQrnt4Ijty513WB3w+q4JO75IX03lDj6qQNA=="
