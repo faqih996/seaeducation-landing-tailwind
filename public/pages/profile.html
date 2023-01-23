@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaeducation</title>
+    <link rel="shortcut icon" href="../assets/svgs/seafav.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/tailwind.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="hidden lg:block fixed lg:max-w-[295px] w-full overflow-y-auto h-full bg-white z-[999]" id="sidebarHRIS">
+        <div class="px-6 py-[50px] gap-y-[50px] flex flex-col">
+            <div class="flex items-center justify-between">
+                <a href="#" class="flex justify-center">
+                    <img src="../assets/svgs/logo-type-sea.svg" class="w-full h-full" alt="">
+                </a>
+                <a href="#" id="toggleCloseSidebar" class="lg:hidden">
+                    <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="text-sm text-gray-50">Daily Use</div>
+                <a href="index.html" class="nav-link">
+                    <img src="../assets/svgs/ic-grid.svg" alt="">
+                    Overview
+                </a>
+                <a href="employees.html" class="nav-link active">
+                    <img src="../assets/svgs/ic-users.svg" alt="">
+                    Profile
+                </a>
+                <a href="my_teams.html" class="nav-link">
+                    <img src="../assets/svgs/ic-briefcase.svg" alt="">
+                    My Class
+                </a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="text-sm text-gray-50">Others</div>
+                <a href="#" class="nav-link">
+                    <img src="../assets/svgs/ic-settings.svg" alt="">
+                    Settings
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="../assets/svgs/ic-signout.svg" alt="">
+                    Logout
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="lg:pr-[70px] py-[50px] lg:ml-[320px] xl:ml-[365px] px-4 lg:pl-0">
+
+        <!-- Top Section -->
+        <section class="flex flex-col flex-wrap justify-between gap-6 md:items-center md:flex-row">
+            <div class="flex items-center justify-between gap-4">
+                <a href="#" id="toggleOpenSidebar" class="lg:hidden">
+                    <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7">
+                        </path>
+                    </svg>
+                </a>
+                <div class="text-heading-2 font-semibold text-gray-100">
+                    Profile
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <form class="shrink md:w-[516px] w-full">
+                    <input type="text" name="" id="" class="input-field !outline-none !border-none italic form-icon-search ring-indigo-200
+                        focus:ring-2 transition-all duration-300 w-full" placeholder="Search people, team, project">
+                </form>
+                <a href="#"
+                    class="flex-none w-[46px] h-[46px] bg-white rounded-full p-[11px] relative notification-dot">
+                    <img src="../assets/svgs/ic-bell.svg" alt="">
+                </a>
+            </div>
+        </section>
+
+        <!-- profile -->
+        <section class="pt-[50px]">
+            <div class="px-2 py-2 bg-white rounded-xl">
+                <form action="#" method="POST">
+
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="grid grid-cols-6 gap-6">
+                            <!-- photo profile -->
+                            <div class="col-span-6">
+                                <div class="flex items-center mt-1">
+                                    <span class="inline-block w-15 h-15 overflow-hidden bg-gray-10 rounded-md">
+                                        <svg class="w-full h-full text-gray-300" fill="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        </svg>
+                                    </span>
+
+                                    <button type="button"
+                                        class="px-3 py-2 ml-5 text-sm font-medium leading-4 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-green-100 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                                        Choose File
+                                    </button>
+
+                                    <button type="button"
+                                        class="px-3 py-2 ml-5 text-sm font-medium leading-4 text-white bg-red-700 rounded-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- first name -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="first-name" class="block mb-3 font-medium text-gray-700 text-md">
+                                    First Name</label>
+                                <input placeholder="Alex Jones" type="text" name="first-name" id="first-name"
+                                    autocomplete="first-name"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- last name -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="last-name" class="block mb-3 font-medium text-gray-700 text-md">Last
+                                    Name</label>
+                                <input placeholder="Website Developer" type="text" name="last-name" id="last-name"
+                                    autocomplete="last-name"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- place of birth -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="birth-place" class="block mb-3 font-medium text-gray-700 text-md">Place of
+                                    Birth</label>
+                                <input placeholder="City" type="text" name="birth-place" id="birth-place"
+                                    autocomplete="birth-place"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- date of birth -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="birth-date" class="block mb-3 font-medium text-gray-700 text-md">Date of
+                                    Birth</label>
+                                <input placeholder="" type="date" name="birth-date" id="birth-date"
+                                    autocomplete="birth-date"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- nation -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="nationality"
+                                    class="block mb-3 font-medium text-gray-700 text-md">nationality</label>
+                                <input placeholder="Indonesia" type="text" name="nationality" id="nationality"
+                                    autocomplete="nationality"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- gender -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="gender" class="block mb-3 font-medium text-gray-700 text-md">
+                                    Gender</label>
+
+                                <select name="gender"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                                    <option class="mt-4" value="Male">Male</option>
+                                    <option class="" value="Female">Female</option>
+                                </select>
+
+                            </div>
+
+                            <!-- contact -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="contact-number" class="block mb-3 font-medium text-gray-700 text-md">Contact
+                                    Number</label>
+                                <input placeholder="+62 812-xxxx-xxxx" type="number" name="contact-number"
+                                    id="contact-number" autocomplete="contact-number"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- email -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="email" class="block mb-3 font-medium text-gray-700 text-md">Email</label>
+                                <input placeholder="example@mail.com" type="email" name="email" id="email"
+                                    autocomplete="email"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- About Me -->
+                            <div class="col-span-6">
+                                <label for="about-me" class="block mb-3 font-medium text-gray-700 text-md">About
+                                    Me</label>
+                                <textarea placeholder="Enter your biography here.." type="text" name="about-me"
+                                    id="about-me" autocomplete="about-me"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm"
+                                    rows="4">I am a web developer and web designer. I have an Associate Degree in Software and Web Development, and I have much
+                                                                        experience in programming languages, such as HTML5, CSS3, PHP, Javascript and PHP. I can use Bootstrap and WordPress.
+                                                                        I will provide fast response and clear communication in several languages.  Feel free to contact me, thank you!</textarea>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="col-span-6">
+                                <label for="adress" class="block mb-3 font-medium text-gray-700 text-md">Address</label>
+                                <textarea placeholder="Enter your adress here" type="text" name="adress" id="adress"
+                                    autocomplete="adress"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm"
+                                    rows="4">Jl. ......</textarea>
+                            </div>
+
+                            <!-- City -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="city" class="block mb-3 font-medium text-gray-700 text-md">City</label>
+                                <input placeholder="South Jakarta" type="text" name="city" id="city" autocomplete="city"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- province state -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="province" class="block mb-3 font-medium text-gray-700 text-md">Province /
+                                    State</label>
+                                <input placeholder="example@mail.com" type="text" name="province" id="province"
+                                    autocomplete="province"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- postal -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="postal-code" class="block mb-3 font-medium text-gray-700 text-md">Postal
+                                    Code</label>
+                                <input placeholder="10000" type="number" name="postal-code" id="postal-code"
+                                    autocomplete="postal-code"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <!-- country -->
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="country"
+                                    class="block mb-3 font-medium text-gray-700 text-md">Country</label>
+                                <input placeholder="Indonesia" type="text" name="country" id="country"
+                                    autocomplete="country"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="px-4 py-3 text-right sm:px-6">
+                        <button type="submit"
+                            class="inline-flex justify-center px-4 py-2 mr-4 text-sm font-medium text-gray-700 bg-white border border-gray-600 rounded-lg shadow-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300">
+                            Cancel
+                        </button>
+
+                        <button type="submit"
+                            class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-lg shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                            Save Changes
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- profile -->
+        <section class="pt-[20px]">
+            <div class="px-2 py-2 bg-white rounded-xl">
+                <form action="#" method="POST">
+
+                    <div class="col-span-6 px-6 flex items-center mt-2">
+                        <h1 class="font-bold text-heading-3">
+                            Education History
+                        </h1>
+                    </div>
+
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="grid grid-cols-6 gap-6">
+
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="first-name" class="block mb-3 font-medium text-gray-700 text-md">
+                                    First Name</label>
+                                <input placeholder="Alex Jones" type="text" name="first-name" id="first-name"
+                                    autocomplete="first-name"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                            <div class="col-span-6 lg:col-span-3">
+                                <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Last
+                                    Name</label>
+                                <input placeholder="Website Developer" type="text" name="service-name" id="service-name"
+                                    autocomplete="service-name"
+                                    class="block w-full py-3 mt-1 border-gray-10 rounded-md shadow-sm focus:ring-green-100 focus:border-green-100 sm:text-sm">
+                            </div>
+
+                </form>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/src/javascript/sidebarToggler.js"></script>
+</body>
+
+</html>
