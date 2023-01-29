@@ -1073,6 +1073,10 @@ body {
   height: 46px;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-\[500px\] {
   height: 500px;
 }
@@ -1123,6 +1127,10 @@ body {
 
 .w-\[46px\] {
   width: 46px;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .max-w-md {
@@ -1246,6 +1254,10 @@ body {
   gap: 2.75rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-y-\[50px\] {
   row-gap: 50px;
 }
@@ -1364,6 +1376,11 @@ body {
   border-color: transparent;
 }
 
+.border-blue-30 {
+  --tw-border-opacity: 1;
+  border-color: rgb(183 203 233 / var(--tw-border-opacity));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(5 13 24 / var(--tw-bg-opacity));
@@ -1424,18 +1441,14 @@ body {
   background-color: rgb(230 230 231 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-}
-
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1831,11 +1844,6 @@ body {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-red-700 {
-  --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
-}
-
 .opacity-0 {
   opacity: 0;
 }
@@ -2022,9 +2030,9 @@ body {
   background-color: rgb(16 83 183 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-50:hover {
+.hover\:bg-red-800:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(130 134 139 / var(--tw-bg-opacity));
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
@@ -2037,39 +2045,9 @@ body {
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue-50:hover {
+.hover\:bg-blue-100:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(135 169 219 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-30:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(180 182 185 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-red-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-green-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(140 245 156 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-70:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(87 134 204 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-green-70:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(111 245 129 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-green-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 209 108 / var(--tw-bg-opacity));
+  background-color: rgb(16 83 183 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
@@ -2099,9 +2077,19 @@ body {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.focus\:border-green-100:focus {
+.focus\:border-blue-50:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(46 209 108 / var(--tw-border-opacity));
+  border-color: rgb(135 169 219 / var(--tw-border-opacity));
+}
+
+.focus\:border-blue-70:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(87 134 204 / var(--tw-border-opacity));
+}
+
+.focus\:border-blue-100:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(16 83 183 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -2120,9 +2108,14 @@ body {
   --tw-ring-color: rgb(34 197 94 / var(--tw-ring-opacity));
 }
 
-.focus\:ring-green-100:focus {
+.focus\:ring-red-500:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(46 209 108 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-blue-50:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(135 169 219 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-gray-300:focus {
@@ -2130,9 +2123,9 @@ body {
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
 }
 
-.focus\:ring-red-500:focus {
+.focus\:ring-blue-100:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(16 83 183 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-offset-2:focus {
@@ -2205,10 +2198,6 @@ body {
 @media (min-width: 768px) {
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
-  }
-
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
   }
 
   .md\:mt-16 {
