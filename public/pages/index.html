@@ -19,12 +19,13 @@
 
     <!-- Navbar -->
     <section
-        class="z-10 w-full h-full px-6 py-2 transition-all duration-500 bg-white shadow-md border-box linear lg:px-16 md:px-20">
+        class="z-10 w-full h-full justify-between transition-all duration-500 bg-white shadow-md border-box linear px-4 lg:px-16 md:px-20">
         <div class="navbar-1-1">
-            <div class="flex flex-row flex-wrap items-center justify-between mx-auto">
+            <div class=" flex flex-row flex-wrap justify-between items-center mx-auto">
                 <a href="#" class="flex items-center text-3xl font-bold">
                     <img src="../assets/images/logosea.png" alt="">
                 </a>
+
                 <label for="menu-toggle" class="block cursor-pointer lg:hidden">
                     <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -33,11 +34,12 @@
                         </path>
                     </svg>
                 </label>
+
                 <input class="hidden" type="checkbox" id="menu-toggle" />
                 <div class="flex-wrap items-center justify-center hidden w-full text-base transition-all lg:flex lg:items-center lg:w-auto lg:ml-auto lg:mr-auto"
                     id="menu">
                     <nav
-                        class="items-center justify-between pt-8 space-x-0 space-y-6 text-base lg:space-x-12 lg:flex lg:pt-0 lg:space-y-0">
+                        class="lg:space-x-4 space-x-0 lg:flex items-center justify-between text-base pt-4 lg:pt-0 lg:space-y-0 space-y-2">
                         <a href="#" class="block font-bold nav-link active hover:text-primary-blue">Beranda</a>
                         <a href="#" class="block font-medium nav-link hover:text-primary-blue">Program</a>
                         <a href="#" class="block font-medium nav-link hover:text-primary-blue">Karir</a>
@@ -48,7 +50,7 @@
                     </nav>
                 </div>
 
-                <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
+                <div class="hidden w-full lg:flex lg:items-center lg:w-auto lg:pb-0 pb-4" id="menu">
                     <button onclick="toggleModal('loginModal')"
                         class="block w-full px-4 py-3 mt-10 text-base font-medium border-0 lg:bg-white hover:bg-blue-10 lg:inline-block lg:py-3 lg:px-4 focus:outline-none rounded-2xl lg:mt-0">
                         Masuk

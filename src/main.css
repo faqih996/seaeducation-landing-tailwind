@@ -87,7 +87,7 @@
     }
 
     .nav-link.active {
-        @apply bg-primary-blue rounded-2xl text-white font-semibold
+        @apply text-primary-blue font-semibold
     }
 
     .nav-link.active img{
