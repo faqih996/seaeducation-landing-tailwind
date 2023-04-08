@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="shortcut icon" href="../assets/svgs/seafav.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/scss/tailwind.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <section
+        class="z-10 w-full h-full justify-between transition-all duration-500 bg-white shadow-md border-box linear px-4 lg:px-16 md:px-20">
+        <div class="navbar-1-1">
+            <div class=" flex flex-row flex-wrap justify-between items-center mx-auto">
+                <a href="#" class="flex items-center text-3xl font-bold">
+                    <img src="../assets/images/logosea.png" alt="">
+                </a>
+
+                <label for="menu-toggle" class="block cursor-pointer lg:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </label>
+
+                <input class="hidden" type="checkbox" id="menu-toggle" />
+                <div class="flex-wrap items-center justify-center hidden w-full text-base transition-all lg:flex lg:items-center lg:w-auto lg:ml-auto lg:mr-auto"
+                    id="menu">
+                    <nav
+                        class="lg:space-x-4 space-x-0 lg:flex items-center justify-between text-base pt-4 lg:pt-0 lg:space-y-0 space-y-2">
+                        <a href="#" class="block font-bold nav-link active hover:text-primary-blue">Beranda</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Program</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Karir</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Kerja Sama</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Tentang Kami</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Blog</a>
+                        <a href="#" class="block font-medium nav-link hover:text-primary-blue">Afiliasi</a>
+                    </nav>
+                </div>
+
+                <div class="hidden w-full lg:flex lg:items-center lg:w-auto lg:pb-0 pb-4" id="menu">
+                    <button onclick="toggleModal('loginModal')"
+                        class="block w-full px-4 py-3 mt-10 text-base font-medium border-0 lg:bg-white hover:bg-blue-10 lg:inline-block lg:py-3 lg:px-4 focus:outline-none rounded-2xl lg:mt-0">
+                        Masuk
+                    </button>
+                    <button onclick="toggleModal('registerModal')"
+                        class="block w-full px-4 py-3 mt-3 text-base font-medium text-white bg-blue-100 border-0 hover:bg-primary-darkblue lg:inline-block lg:py- lg:px-8 focus:outline-none rounded-2xl lg:mt-0">
+                        Daftar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Navbar -->
+
+    <section class="w-full h-full mx-auto">
+        <div class="min-h-screen lg:py-12 py-4">
+            <div class="mx-auto lg:px-8 px-4">
+                <div class="px-2 py-2 bg-white rounded-xl">
+                    <form action="#" method="POST">
+    
+                        <div class="col-span-6 px-6 flex items-center justidy mt-2">
+                            <h1 class="font-bold text-heading-3">
+                                Sea Education Regular Program
+                            </h1>
+                        </div>
+    
+                        <div class="px-4 py-5 sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+    
+                                <!-- First Name -->
+                                <div class="col-span-6 lg:col-span-3">
+                                    <label for="school-name" class="block mb-3 font-medium text-gray-700 text-md">
+                                        First Name</label>
+                                    <input placeholder="" type="text" name="school-name" id="school-name"
+                                        autocomplete="school-name"
+                                        class="block w-full py-3 mt-1 border-blue-30 rounded-md shadow-sm focus:ring-blue-100 focus:border-blue-100 sm:text-sm">
+                                </div>
+
+                                <!-- Last Name -->
+                                <div class="col-span-6 lg:col-span-3">
+                                    <label for="school-name" class="block mb-3 font-medium text-gray-700 text-md">
+                                        Last Name</label>
+                                    <input placeholder="" type="text" name="school-name" id="school-name"
+                                        autocomplete="school-name"
+                                        class="block w-full py-3 mt-1 border-blue-30 rounded-md shadow-sm focus:ring-blue-100 focus:border-blue-100 sm:text-sm">
+                                </div>
+    
+                                <!-- Degree -->
+                                <div class="col-span-6 lg:col-span-3">
+                                    <label for="education-degree"
+                                        class="block mb-3 font-medium text-gray-700 text-md">Current Job</label>
+                                    <input placeholder="Website Developer" type="text" name="education-degree"
+                                        id="education-degree" autocomplete="education-degree"
+                                        class="block w-full py-3 mt-1 border-blue-30 rounded-md shadow-sm focus:ring-blue-100 focus:border-blue-100 sm:text-sm">
+                                </div>
+    
+                                <!-- Course of Study -->
+                                <div class="col-span-6 lg:col-span-3">
+                                    <label for="course" class="block mb-3 font-medium text-gray-700 text-md">Course of
+                                        Study</label>
+                                    <input placeholder="Website Developer" type="text" name="course" id="course"
+                                        autocomplete="course"
+                                        class="block w-full py-3 mt-1 border-blue-30 rounded-md shadow-sm focus:ring-blue-100 focus:border-blue-100 sm:text-sm">
+                                </div>
+    
+                                <!-- Telephone -->
+                                <div class="col-span-6 lg:col-span-3">
+                                    <label for="service-name"
+                                        class="block mb-3 font-medium text-gray-700 text-md">Telephone</label>
+                                    <input placeholder="021-xxx-xxx" type="number" name="service-name" id="service-name"
+                                        autocomplete="service-name"
+                                        class="block w-full py-3 mt-1 border-blue-30 rounded-md shadow-sm focus:ring-blue-100 focus:border-blue-100 sm:text-sm">
+                                </div>
+    
+                                <!-- City -->
+                                <div class="col-span-6 lg:col-span-3">
+                                    <label for="service-name"
+                                        class="block mb-3 font-medium text-gray-700 text-md">City</label>
+                                    <input placeholder="Website Developer" type="text" name="service-name" id="service-name"
+                                        autocomplete="service-name"
+                                        class="block w-full py-3 mt-1 border-blue-30 rounded-md shadow-sm focus:ring-blue-100 focus:border-blue-100 sm:text-sm">
+                                </div>
+    
+                                <!-- Province -->
+                                <div class="col-span-6 lg:col-span-3">
+                                    <label for="service-name"
+                                        class="block mb-3 font-medium text-gray-700 text-md">State/Province</label>
+                                    <input placeholder="Website Developer" type="text" name="service-name" id="service-name"
+                                        autocomplete="service-name"
+                                        class="block w-full py-3 mt-1 border-blue-30 rounded-md shadow-sm focus:ring-blue-100 focus:border-blue-100 sm:text-sm">
+                                </div>
+    
+                                <!-- Country / Region -->
+                                <div class="col-span-6 lg:col-span-3">
+                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">County /
+                                        Region</label>
+                                    <input placeholder="Website Developer" type="text" name="service-name" id="service-name"
+                                        autocomplete="service-name"
+                                        class="block w-full py-3 mt-1 border-blue-30 rounded-md shadow-sm focus:ring-blue-100 focus:border-blue-100 sm:text-sm">
+                                </div>
+    
+    
+                            </div>
+                        </div>
+    
+                        <!-- Button -->
+                        <div class="px-4 py-3 text-right sm:px-6">
+    
+                            <button type="submit"
+                                class="inline-flex justify-center px-4 py-2 mr-4 text-sm font-medium text-gray-700 bg-white border border-gray-600 rounded-lg shadow-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300">
+                                Cancel
+                            </button>
+    
+                            <button type="submit"
+                                class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-blue-100 border border-transparent rounded-lg shadow-sm hover:bg-primary-darkblue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-100">
+                                Daftar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
